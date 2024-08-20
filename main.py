@@ -1,15 +1,28 @@
-# This is a sample Python script.
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+8 to toggle the breakpoint.
+import pickle
+import hashlib
+import sys
 
 
-# Press the green button in the gutter to run the script.
+def print_menu():
+    menu = """
+    ------Login-test------
+    1. Signup
+    2. Login
+    3. Exit
+    ----------------------
+    """
+    print(menu)
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    while True:
+        print_menu()
+        choice = input("Choice:\n")
+        match choice:
+            case 1:
+                print("TODO: Signin")
+            case 2:
+                print("TODO: Login")
+            case 3:
+                sys.exit(0)
 
